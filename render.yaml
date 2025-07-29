@@ -1,7 +1,8 @@
 services:
-  - type: web
+  - type: worker          # ✅ Меняем на worker
     name: telegram-bot
     env: python
     buildCommand: pip install -r requirements.txt
     startCommand: bash start.sh
     plan: free
+    region: frankfurt     # можно не указывать, если уже задан
