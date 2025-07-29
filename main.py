@@ -48,8 +48,7 @@ def parse_and_send(update, context):
         except: i += 1
     driver.quit()
     for text, img_url, link in items:
-        context.bot.send_photo(chat_id=update.message.chat_id, photo=img_url, caption=f"{text}
-{link}")
+        context.bot.send_photo(chat_id=update.message.chat_id, photo=img_url, caption=f"{text}\n{link}")
         time.sleep(0.5)
     update.message.reply_text(f'✅ Готово! Отправлено {len(items)} товаров.')
     return ConversationHandler.END
