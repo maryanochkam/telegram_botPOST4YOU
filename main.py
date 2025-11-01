@@ -26,7 +26,7 @@ threading.Thread(target=run_health_server, daemon=True).start()
 logging.basicConfig(level=logging.INFO, format="%(asctime)s | %(levelname)s | %(message)s")
 
 # ======= ТВОИ ДАННЫЕ =======
-TOKEN = '8080984044:AAHFO5lM_KULdtFjc56Aq2NgGtzLRm_sapo'
+TOKEN = '8080984044:AAGuSNyBDQ7VUb3t5yuCZnrbvRkOrO-sXwg'
 ALLOWED_NUMBERS = ['+380675930528', '+380959312506']
 ASK_PHONE, ASK_LINK = range(2)
 
